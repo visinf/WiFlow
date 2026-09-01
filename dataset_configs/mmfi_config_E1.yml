@@ -1,0 +1,23 @@
+modalities:
+  - wifi-csi
+  - rgb
+  - flow
+
+
+dataset_root: dataset/mmfi
+
+train:
+  batch_size: 8
+  environments: [ E01 ]
+  subjects: [S01, S02, S03, S04, S05, S06, S07]
+  actions: ['A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08', 'A09', 'A10', 'A11', 'A12', 'A13', 'A14',
+                   'A15', 'A16', 'A17', 'A18', 'A19', 'A20', 'A21', 'A22', 'A23', 'A24', 'A25', 'A26', 'A27']
+
+validation:
+  batch_size: 1
+  environments: [ E01 ]
+  subjects: [S08, S09, S10]
+  actions: ['A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08', 'A09', 'A10', 'A11', 'A12', 'A13', 'A14',
+                   'A15', 'A16', 'A17', 'A18', 'A19', 'A20', 'A21', 'A22', 'A23', 'A24', 'A25', 'A26', 'A27']
+
+seed: 42

@@ -1,0 +1,19 @@
+modalities:
+  - wifi-csi
+  - rgb
+  - flow
+
+dataset_root: dataset/mmfi
+
+train:
+  split: training
+  environments: [ E04 ]
+  subjects: [S31]
+  actions: [A01]
+validation:
+  split: validation
+  environments: [ E04 ]
+  subjects: [S38]
+  actions: [A01]
+
+seed: 42
